@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "BoltechTask/**/*.{swift}"
   spec.exclude_files = "BoltechTask/BoltechTaskTests/**/*" , "BoltechTask/BoltechTaskExample/**/*"
 
-  spec.frameworks = "UIKit", "Foundation", "XCTest"
+  spec.frameworks = "UIKit", "Foundation"
   spec.swift_versions = "5.0"
 
 end
