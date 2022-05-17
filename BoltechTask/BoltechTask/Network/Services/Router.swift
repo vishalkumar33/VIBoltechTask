@@ -73,6 +73,10 @@ class Router: NetworkRouter {
                                              urlParameters: urlParameters,
                                              request: &request)
             }
+            guard let headers = route.headers else { return request }
+            for (key, value) in headers {
+                request.setValue(value, forHTTPHeaderField: key)
+            }
             return request
         } catch {
             throw error
