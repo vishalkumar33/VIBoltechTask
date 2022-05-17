@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "VIBoltechTask"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "This is sample sdk for learning purpose"
   spec.description  = "This is sample sdk for learning purpose, I am doing a project in which try to create sampl sdk"
 
