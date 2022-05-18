@@ -3,7 +3,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "VIBoltechTask"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "This is sample sdk for learning purpose"
   spec.description  = "This is sample sdk for learning purpose, I am doing a project in which try to create sampl sdk"
 
@@ -20,6 +20,7 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "BoltechTask/**/*.{swift}"
   spec.exclude_files = "BoltechTask/BoltechTaskTests/**/*" , "BoltechTask/BoltechTaskExample/**/*"
+  spec.resources = ['BoltechTask/Helper/*.png']
 
   spec.frameworks = "UIKit", "Foundation"
   spec.swift_versions = "5.0"

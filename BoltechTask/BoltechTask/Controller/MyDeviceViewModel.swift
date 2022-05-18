@@ -19,8 +19,10 @@ class MyDeviceViewModel {
 
     func getAllDevices() {
         networkManager.getAllDeviceInfo { [weak self] deviceResponse, error in
-            if let deviceResponse = deviceResponse, let devices = deviceResponse.items?.first?.devices {
-                self?.updateWithData?(devices)
+            DispatchQueue.main.async {
+                if let deviceResponse = deviceResponse, let devices = deviceResponse.items?.first?.devices {
+                    self?.updateWithData?(devices)
+                }
             }
         }
     }
