@@ -12,8 +12,8 @@ class DevicesCollectionViewCell: UICollectionViewCell {
     
     let imageView: UIImageView = {
         let imgView = UIImageView()
-        let bundle = Bundle(identifier: "vishal.BoltechTask")
-        if let path = bundle?.path(forResource: "sampleIcon", ofType: "png") {
+        let bundle = Bundle(for: DevicesCollectionViewCell.self)
+        if let path = bundle.path(forResource: "sampleIcon", ofType: "png") {
             imgView.image = UIImage(contentsOfFile: path)
         }
         imgView.contentMode = .center
